@@ -1,0 +1,149 @@
+// IDL file for CS5565 RPC Server/Client
+//
+// Keywords in this file are "proc", "takes", "returns" and the following
+// supported data types: 	void/uint16/uint32/int16/int32 and bytearray
+//
+// The transport layer specification for an RPC call is as follows
+//
+// Caller sends:   
+//       4 bytes for procedure identifier specified on "proc" line
+//	 0 bytes if arguments are void
+//       Arguments to call, from left to right as specified on "takes" line
+//         2 bytes if int16 for 16bit signed values
+//         4 bytes if int32 for 32bit signed values
+//         4+n bytes if bytearray 4 bytes for length n, followed by n bytes of data
+//
+// Callee returns: 4 or 2 bytes depending on return type specified in "returns" line
+//		   Return type may not be void.
+//
+// All multi-byte values are sent in network byte order, that is, big endian, 
+// or most significant byte first.  For instance, a uint32_t value of 258 is 
+// sent as 258 = 0x101 = 0x00000102 four bytes: 00 00 01 02
+//
+// All calls are synchronous, the caller's stub must wait for a return value sent 
+// by the callee's stub before returning to the caller.  The callee's stub must 
+// return the return value after the server stub called the server function.
+//
+// Godmar Back, February 2005
+// $Id: dlsim.idl,v 1.6 2005/03/01 15:04:16 cs5565 Exp $
+//
+
+// Calls may be inbound or outbound from the simulator's point of view.
+// For outbound calls, your client must implement a server stub function.
+// For inbound calls, your client must implement a client stub function.
+//
+// ----------------------------------------------------------------------------
+// 
+// Outbound call from simulator.
+//
+// This call initializes a node.  It assign its node_id and tells it about the 
+// total number of nodes in the simulation, as well as the number of ports connected
+// to each node.  In addition, it provides an TCP address to which the node must
+// connect to make inbound calls.
+//
+// int init_node(short node_id, short nnodes, short nports,
+// 					  long simulator_ip, short simulator_port)
+// returns 0
+proc init_node = 1
+takes int16 node_id int16 nnodes int16 nports int32 simulator_ip int16 simulator_port
+returns int32
+
+// Inbound call
+// The current time as displayed by the simulator's forced clock
+//
+// int get_current_time();
+proc get_current_time = 2
+takes void
+returns int32
+
+// Inbound call
+// The cost associated with an attached port
+// Returns -1 if the link is not connected.
+// Exception: if a previously connected link fails the last known cost is returned.
+//            consequently, you cannot call get_cost to learn if a link failed.
+//
+// signed int get_cost(signed int port);
+proc get_cost = 3
+takes int16 port
+returns int16
+
+// Inbound call
+// Set a timer that expires at time 'expires' according to the simulator's 
+// forced clock
+//
+// int add_timer(int expires, int data)
+proc add_timer = 4
+takes int32 expires int32 data
+returns int32
+
+// Outbound call
+// A timer set with add_timer expired.  The data element is the data that
+// was specified previously.
+//
+// returns 0
+// int timer_expired(int data)
+proc timer_expired = 5
+takes int32 data
+returns int32
+
+// Inbound call
+// Cancel and delete a previously scheduled timer
+//
+// Behavior undefined if timer wasn't previously created.
+// returns 0
+//
+// int del_timer(int)
+proc del_timer = 6
+takes int32 timer_id
+returns int32
+
+// Outbound call
+// A message arrived from node 'from' via port 'port_id'
+// returns 0
+//
+// int read_msg(int from_node, int port_id, void *data, int len)
+proc read_msg = 7
+takes int16 from_node int16 port_id bytearray data
+returns int32
+
+// Inbound call
+// A node wishes to send a message via its connected port 'port_id'
+// returns 0
+//
+// int write_msg(int port_id, void *data, int len)
+proc write_msg = 8
+takes int16 port_id bytearray data
+returns int32
+
+// Outbound call
+// The last call from the simulator to the node before scoring.
+//
+// The node has a chance here for final cleanup or computation.
+// This call must return, so do not exit() in this call.
+// returns 0
+//
+// int terminate_node(void)
+proc terminate_node = 9
+takes void
+returns int32
+
+// Outbound call
+// The simulator inquires about the node's routing table
+// returns the local port along which the node would send 
+// data to node 'dest'
+//
+// short get_rtable_port(short dest)
+proc get_rtable_port = 10
+takes int16 dest_node
+returns int16
+
+// Outbound call
+// The simulator inquires about the node's routing table
+// returns the local port along which the node would send 
+// data to node 'dest'
+//
+// int get_rtable_cost(host dest)
+proc get_rtable_cost = 11
+takes int16 dest_node
+returns int32
+
