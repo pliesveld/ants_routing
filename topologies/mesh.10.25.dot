@@ -1,0 +1,324 @@
+// Number of switches: 10
+// Ports/Switch: 25
+// Network Connectivity: 
+// ----------------------------------------------------------
+graph topology {
+  nodesep=0.5
+  node[fontname=Helvetica,fontsize=12,fontcolor=green]
+  edge[fontname=Helvetica,fontsize=10,fontcolor=red]
+  Node0[style=bold]
+  Node1[style=bold]
+  Node2[style=bold]
+  Node3[style=bold]
+  Node4[style=bold]
+  Node5[style=bold]
+  Node6[style=bold]
+  Node7[style=bold]
+  Node8[style=bold]
+  Node9[style=bold]
+// Node 0
+  // Port 0 is connected to port 0 on node 1 with cost 2.
+  Node0 -- Node1 [headlabel="0", taillabel="0", label=" 2", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 1 is connected to port 0 on node 2 with cost 8.
+  Node0 -- Node2 [headlabel="0", taillabel="1", label=" 8", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 2 is connected to port 0 on node 3 with cost 7.
+  Node0 -- Node3 [headlabel="0", taillabel="2", label=" 7", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 3 is connected to port 0 on node 4 with cost 6.
+  Node0 -- Node4 [headlabel="0", taillabel="3", label=" 6", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 4 is connected to port 0 on node 5 with cost 8.
+  Node0 -- Node5 [headlabel="0", taillabel="4", label=" 8", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 5 is connected to port 0 on node 6 with cost 6.
+  Node0 -- Node6 [headlabel="0", taillabel="5", label=" 6", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 6 is connected to port 0 on node 7 with cost 7.
+  Node0 -- Node7 [headlabel="0", taillabel="6", label=" 7", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 7 is connected to port 0 on node 8 with cost 10.
+  Node0 -- Node8 [headlabel="0", taillabel="7", label=" 10", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 8 is connected to port 0 on node 9 with cost 6.
+  Node0 -- Node9 [headlabel="0", taillabel="8", label=" 6", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 9 is not connected.
+  // Port 10 is not connected.
+  // Port 11 is not connected.
+  // Port 12 is not connected.
+  // Port 13 is not connected.
+  // Port 14 is not connected.
+  // Port 15 is not connected.
+  // Port 16 is not connected.
+  // Port 17 is not connected.
+  // Port 18 is not connected.
+  // Port 19 is not connected.
+  // Port 20 is not connected.
+  // Port 21 is not connected.
+  // Port 22 is not connected.
+  // Port 23 is not connected.
+  // Port 24 is not connected.
+// Node 1
+  // Port 0 is connected to port 0 on node 0 with cost 2.
+  // Port 1 is connected to port 1 on node 2 with cost 2.
+  Node1 -- Node2 [headlabel="1", taillabel="1", label=" 2", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 2 is connected to port 1 on node 3 with cost 6.
+  Node1 -- Node3 [headlabel="1", taillabel="2", label=" 6", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 3 is connected to port 1 on node 4 with cost 4.
+  Node1 -- Node4 [headlabel="1", taillabel="3", label=" 4", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 4 is connected to port 1 on node 5 with cost 3.
+  Node1 -- Node5 [headlabel="1", taillabel="4", label=" 3", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 5 is connected to port 1 on node 6 with cost 9.
+  Node1 -- Node6 [headlabel="1", taillabel="5", label=" 9", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 6 is connected to port 1 on node 7 with cost 1.
+  Node1 -- Node7 [headlabel="1", taillabel="6", label=" 1", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 7 is connected to port 1 on node 8 with cost 5.
+  Node1 -- Node8 [headlabel="1", taillabel="7", label=" 5", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 8 is connected to port 1 on node 9 with cost 6.
+  Node1 -- Node9 [headlabel="1", taillabel="8", label=" 6", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 9 is not connected.
+  // Port 10 is not connected.
+  // Port 11 is not connected.
+  // Port 12 is not connected.
+  // Port 13 is not connected.
+  // Port 14 is not connected.
+  // Port 15 is not connected.
+  // Port 16 is not connected.
+  // Port 17 is not connected.
+  // Port 18 is not connected.
+  // Port 19 is not connected.
+  // Port 20 is not connected.
+  // Port 21 is not connected.
+  // Port 22 is not connected.
+  // Port 23 is not connected.
+  // Port 24 is not connected.
+// Node 2
+  // Port 0 is connected to port 1 on node 0 with cost 8.
+  // Port 1 is connected to port 1 on node 1 with cost 2.
+  // Port 2 is connected to port 2 on node 3 with cost 7.
+  Node2 -- Node3 [headlabel="2", taillabel="2", label=" 7", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 3 is connected to port 2 on node 4 with cost 7.
+  Node2 -- Node4 [headlabel="2", taillabel="3", label=" 7", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 4 is connected to port 2 on node 5 with cost 6.
+  Node2 -- Node5 [headlabel="2", taillabel="4", label=" 6", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 5 is connected to port 2 on node 6 with cost 5.
+  Node2 -- Node6 [headlabel="2", taillabel="5", label=" 5", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 6 is connected to port 2 on node 7 with cost 1.
+  Node2 -- Node7 [headlabel="2", taillabel="6", label=" 1", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 7 is connected to port 2 on node 8 with cost 9.
+  Node2 -- Node8 [headlabel="2", taillabel="7", label=" 9", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 8 is connected to port 2 on node 9 with cost 3.
+  Node2 -- Node9 [headlabel="2", taillabel="8", label=" 3", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 9 is not connected.
+  // Port 10 is not connected.
+  // Port 11 is not connected.
+  // Port 12 is not connected.
+  // Port 13 is not connected.
+  // Port 14 is not connected.
+  // Port 15 is not connected.
+  // Port 16 is not connected.
+  // Port 17 is not connected.
+  // Port 18 is not connected.
+  // Port 19 is not connected.
+  // Port 20 is not connected.
+  // Port 21 is not connected.
+  // Port 22 is not connected.
+  // Port 23 is not connected.
+  // Port 24 is not connected.
+// Node 3
+  // Port 0 is connected to port 2 on node 0 with cost 7.
+  // Port 1 is connected to port 2 on node 1 with cost 6.
+  // Port 2 is connected to port 2 on node 2 with cost 7.
+  // Port 3 is connected to port 3 on node 4 with cost 10.
+  Node3 -- Node4 [headlabel="3", taillabel="3", label=" 10", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 4 is connected to port 3 on node 5 with cost 6.
+  Node3 -- Node5 [headlabel="3", taillabel="4", label=" 6", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 5 is connected to port 3 on node 6 with cost 9.
+  Node3 -- Node6 [headlabel="3", taillabel="5", label=" 9", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 6 is connected to port 3 on node 7 with cost 3.
+  Node3 -- Node7 [headlabel="3", taillabel="6", label=" 3", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 7 is connected to port 3 on node 8 with cost 5.
+  Node3 -- Node8 [headlabel="3", taillabel="7", label=" 5", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 8 is connected to port 3 on node 9 with cost 9.
+  Node3 -- Node9 [headlabel="3", taillabel="8", label=" 9", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 9 is not connected.
+  // Port 10 is not connected.
+  // Port 11 is not connected.
+  // Port 12 is not connected.
+  // Port 13 is not connected.
+  // Port 14 is not connected.
+  // Port 15 is not connected.
+  // Port 16 is not connected.
+  // Port 17 is not connected.
+  // Port 18 is not connected.
+  // Port 19 is not connected.
+  // Port 20 is not connected.
+  // Port 21 is not connected.
+  // Port 22 is not connected.
+  // Port 23 is not connected.
+  // Port 24 is not connected.
+// Node 4
+  // Port 0 is connected to port 3 on node 0 with cost 6.
+  // Port 1 is connected to port 3 on node 1 with cost 4.
+  // Port 2 is connected to port 3 on node 2 with cost 7.
+  // Port 3 is connected to port 3 on node 3 with cost 10.
+  // Port 4 is connected to port 4 on node 5 with cost 9.
+  Node4 -- Node5 [headlabel="4", taillabel="4", label=" 9", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 5 is connected to port 4 on node 6 with cost 6.
+  Node4 -- Node6 [headlabel="4", taillabel="5", label=" 6", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 6 is connected to port 4 on node 7 with cost 8.
+  Node4 -- Node7 [headlabel="4", taillabel="6", label=" 8", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 7 is connected to port 4 on node 8 with cost 8.
+  Node4 -- Node8 [headlabel="4", taillabel="7", label=" 8", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 8 is connected to port 4 on node 9 with cost 3.
+  Node4 -- Node9 [headlabel="4", taillabel="8", label=" 3", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 9 is not connected.
+  // Port 10 is not connected.
+  // Port 11 is not connected.
+  // Port 12 is not connected.
+  // Port 13 is not connected.
+  // Port 14 is not connected.
+  // Port 15 is not connected.
+  // Port 16 is not connected.
+  // Port 17 is not connected.
+  // Port 18 is not connected.
+  // Port 19 is not connected.
+  // Port 20 is not connected.
+  // Port 21 is not connected.
+  // Port 22 is not connected.
+  // Port 23 is not connected.
+  // Port 24 is not connected.
+// Node 5
+  // Port 0 is connected to port 4 on node 0 with cost 8.
+  // Port 1 is connected to port 4 on node 1 with cost 3.
+  // Port 2 is connected to port 4 on node 2 with cost 6.
+  // Port 3 is connected to port 4 on node 3 with cost 6.
+  // Port 4 is connected to port 4 on node 4 with cost 9.
+  // Port 5 is connected to port 5 on node 6 with cost 5.
+  Node5 -- Node6 [headlabel="5", taillabel="5", label=" 5", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 6 is connected to port 5 on node 7 with cost 3.
+  Node5 -- Node7 [headlabel="5", taillabel="6", label=" 3", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 7 is connected to port 5 on node 8 with cost 9.
+  Node5 -- Node8 [headlabel="5", taillabel="7", label=" 9", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 8 is connected to port 5 on node 9 with cost 6.
+  Node5 -- Node9 [headlabel="5", taillabel="8", label=" 6", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 9 is not connected.
+  // Port 10 is not connected.
+  // Port 11 is not connected.
+  // Port 12 is not connected.
+  // Port 13 is not connected.
+  // Port 14 is not connected.
+  // Port 15 is not connected.
+  // Port 16 is not connected.
+  // Port 17 is not connected.
+  // Port 18 is not connected.
+  // Port 19 is not connected.
+  // Port 20 is not connected.
+  // Port 21 is not connected.
+  // Port 22 is not connected.
+  // Port 23 is not connected.
+  // Port 24 is not connected.
+// Node 6
+  // Port 0 is connected to port 5 on node 0 with cost 6.
+  // Port 1 is connected to port 5 on node 1 with cost 9.
+  // Port 2 is connected to port 5 on node 2 with cost 5.
+  // Port 3 is connected to port 5 on node 3 with cost 9.
+  // Port 4 is connected to port 5 on node 4 with cost 6.
+  // Port 5 is connected to port 5 on node 5 with cost 5.
+  // Port 6 is connected to port 6 on node 7 with cost 1.
+  Node6 -- Node7 [headlabel="6", taillabel="6", label=" 1", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 7 is connected to port 6 on node 8 with cost 3.
+  Node6 -- Node8 [headlabel="6", taillabel="7", label=" 3", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 8 is connected to port 6 on node 9 with cost 1.
+  Node6 -- Node9 [headlabel="6", taillabel="8", label=" 1", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 9 is not connected.
+  // Port 10 is not connected.
+  // Port 11 is not connected.
+  // Port 12 is not connected.
+  // Port 13 is not connected.
+  // Port 14 is not connected.
+  // Port 15 is not connected.
+  // Port 16 is not connected.
+  // Port 17 is not connected.
+  // Port 18 is not connected.
+  // Port 19 is not connected.
+  // Port 20 is not connected.
+  // Port 21 is not connected.
+  // Port 22 is not connected.
+  // Port 23 is not connected.
+  // Port 24 is not connected.
+// Node 7
+  // Port 0 is connected to port 6 on node 0 with cost 7.
+  // Port 1 is connected to port 6 on node 1 with cost 1.
+  // Port 2 is connected to port 6 on node 2 with cost 1.
+  // Port 3 is connected to port 6 on node 3 with cost 3.
+  // Port 4 is connected to port 6 on node 4 with cost 8.
+  // Port 5 is connected to port 6 on node 5 with cost 3.
+  // Port 6 is connected to port 6 on node 6 with cost 1.
+  // Port 7 is connected to port 7 on node 8 with cost 6.
+  Node7 -- Node8 [headlabel="7", taillabel="7", label=" 6", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 8 is connected to port 7 on node 9 with cost 5.
+  Node7 -- Node9 [headlabel="7", taillabel="8", label=" 5", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 9 is not connected.
+  // Port 10 is not connected.
+  // Port 11 is not connected.
+  // Port 12 is not connected.
+  // Port 13 is not connected.
+  // Port 14 is not connected.
+  // Port 15 is not connected.
+  // Port 16 is not connected.
+  // Port 17 is not connected.
+  // Port 18 is not connected.
+  // Port 19 is not connected.
+  // Port 20 is not connected.
+  // Port 21 is not connected.
+  // Port 22 is not connected.
+  // Port 23 is not connected.
+  // Port 24 is not connected.
+// Node 8
+  // Port 0 is connected to port 7 on node 0 with cost 10.
+  // Port 1 is connected to port 7 on node 1 with cost 5.
+  // Port 2 is connected to port 7 on node 2 with cost 9.
+  // Port 3 is connected to port 7 on node 3 with cost 5.
+  // Port 4 is connected to port 7 on node 4 with cost 8.
+  // Port 5 is connected to port 7 on node 5 with cost 9.
+  // Port 6 is connected to port 7 on node 6 with cost 3.
+  // Port 7 is connected to port 7 on node 7 with cost 6.
+  // Port 8 is connected to port 8 on node 9 with cost 2.
+  Node8 -- Node9 [headlabel="8", taillabel="8", label=" 2", labelfontname=Helvetica, labelfontcolor=blue, labelfontsize=8, style=bold, labeldistance=1.3]
+  // Port 9 is not connected.
+  // Port 10 is not connected.
+  // Port 11 is not connected.
+  // Port 12 is not connected.
+  // Port 13 is not connected.
+  // Port 14 is not connected.
+  // Port 15 is not connected.
+  // Port 16 is not connected.
+  // Port 17 is not connected.
+  // Port 18 is not connected.
+  // Port 19 is not connected.
+  // Port 20 is not connected.
+  // Port 21 is not connected.
+  // Port 22 is not connected.
+  // Port 23 is not connected.
+  // Port 24 is not connected.
+// Node 9
+  // Port 0 is connected to port 8 on node 0 with cost 6.
+  // Port 1 is connected to port 8 on node 1 with cost 6.
+  // Port 2 is connected to port 8 on node 2 with cost 3.
+  // Port 3 is connected to port 8 on node 3 with cost 9.
+  // Port 4 is connected to port 8 on node 4 with cost 3.
+  // Port 5 is connected to port 8 on node 5 with cost 6.
+  // Port 6 is connected to port 8 on node 6 with cost 1.
+  // Port 7 is connected to port 8 on node 7 with cost 5.
+  // Port 8 is connected to port 8 on node 8 with cost 2.
+  // Port 9 is not connected.
+  // Port 10 is not connected.
+  // Port 11 is not connected.
+  // Port 12 is not connected.
+  // Port 13 is not connected.
+  // Port 14 is not connected.
+  // Port 15 is not connected.
+  // Port 16 is not connected.
+  // Port 17 is not connected.
+  // Port 18 is not connected.
+  // Port 19 is not connected.
+  // Port 20 is not connected.
+  // Port 21 is not connected.
+  // Port 22 is not connected.
+  // Port 23 is not connected.
+  // Port 24 is not connected.
+}
